@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.11.1",
+    "botbuilder": "^4.22.1",
     "dotenv": "^17.2.4",
     "next": "14.2.5",
     "react": "18.2.0",
