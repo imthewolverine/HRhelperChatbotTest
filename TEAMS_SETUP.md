@@ -15,7 +15,7 @@ This guide explains how to deploy and use your AI agent inside Microsoft Teams.
 3. Go to **Settings** → **Configuration**
 4. Set **Messaging endpoint** to:
    ```
-   https://YOUR-VERCEL-URL/api/teams/messages
+   https://h-rhelper-chatbot-test.vercel.app/api/teams/messages
    ```
    Replace `YOUR-VERCEL-URL` with your actual Vercel domain (e.g., `teamstest-rho.vercel.app`)
 5. Save changes
