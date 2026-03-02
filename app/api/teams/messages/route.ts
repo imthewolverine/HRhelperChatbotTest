@@ -6,7 +6,8 @@ export const runtime = "nodejs";
 
 const adapter = new BotFrameworkAdapter({
   appId: process.env.MICROSOFT_APP_ID!,
-  appPassword: process.env.MICROSOFT_APP_PASSWORD!
+  appPassword: process.env.MICROSOFT_APP_PASSWORD!,
+  channelAuthTenant: process.env.MICROSOFT_APP_TENANT_ID!
 });
 
 export async function POST(req: NextRequest) {
