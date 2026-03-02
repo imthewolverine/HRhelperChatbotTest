@@ -1,64 +1,37 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.14",
+  "manifestVersion": "1.13",
   "version": "1.0.0",
   "id": "447da854-00b7-4267-93a8-f6b231d2fb92",
-  "packaging": {
-    "allowSideLoad": true
+  "packageName": "com.aiagent.chatbot",
+  "name": {
+    "short": "AI Agent",
+    "full": "AI Agent Chatbot"
   },
-  "developer": {
-    "name": "AI Agent",
-    "websiteUrl": "https://github.com",
-    "privacyUrl": "https://github.com",
-    "termsOfUseUrl": "https://github.com"
+  "description": {
+    "short": "Gemini-powered AI agent",
+    "full": "An AI chatbot running in Microsoft Teams"
   },
   "icons": {
     "color": "color.png",
     "outline": "outline.png"
   },
-  "name": {
-    "short": "AI Agent",
-    "full": "Teams AI Agent Chat"
-  },
-  "description": {
-    "short": "AI-powered agent chat interface",
-    "full": "A Gemini-backed conversational agent running inside Microsoft Teams"
-  },
   "accentColor": "#10b981",
+  "developer": {
+    "name": "Developer",
+    "websiteUrl": "https://h-rhelper-chatbot-test.vercel.app",
+    "privacyUrl": "https://h-rhelper-chatbot-test.vercel.app",
+    "termsOfUseUrl": "https://h-rhelper-chatbot-test.vercel.app"
+  },
   "bots": [
     {
       "botId": "447da854-00b7-4267-93a8-f6b231d2fb92",
       "scopes": [
         "personal",
         "team"
-      ],
-      "commandLists": [
-        {
-          "scopes": [
-            "personal",
-            "team"
-          ],
-          "commands": [
-            {
-              "title": "Help",
-              "description": "Show help commands"
-            },
-            {
-              "title": "Status",
-              "description": "Check agent status"
-            }
-          ]
-        }
-      ],
-      "isNotificationOnly": false
+      ]
     }
   ],
   "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "*.vercel.app",
-    "localhost"
+    "identity"
   ]
 }
