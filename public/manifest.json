@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "447da854-00b7-4267-93a8-f6b231d2fb92",
+  "packaging": {
+    "allowSideLoad": true
+  },
+  "developer": {
+    "name": "AI Agent",
+    "websiteUrl": "https://github.com",
+    "privacyUrl": "https://github.com",
+    "termsOfUseUrl": "https://github.com"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "AI Agent",
+    "full": "Teams AI Agent Chat"
+  },
+  "description": {
+    "short": "AI-powered agent chat interface",
+    "full": "A Gemini-backed conversational agent running inside Microsoft Teams"
+  },
+  "accentColor": "#10b981",
+  "bots": [
+    {
+      "botId": "447da854-00b7-4267-93a8-f6b231d2fb92",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Show help commands"
+            },
+            {
+              "title": "Status",
+              "description": "Check agent status"
+            }
+          ]
+        }
+      ],
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "*.vercel.app",
+    "localhost"
+  ]
+}
