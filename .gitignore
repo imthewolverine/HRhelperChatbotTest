@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules.env
 .env.local
 .env.*.local
@@ -5,4 +6,6 @@ node_modules.env
 dist
 build
 *.pem
+=======
+>>>>>>> 3d12e84ef054faf2afea974d89cb87afaae19df8
 node_modules
